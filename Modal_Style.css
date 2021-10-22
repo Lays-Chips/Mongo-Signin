@@ -1,0 +1,156 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+/* Styles for the inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 25px;
+  
+}
+
+/* When input box is selected, shows difference in the color */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #3a3b3c;
+  outline: none;
+  color: white;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3c89d0;
+  color: white;
+  padding: 14px 200px;
+  margin: 8px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  text-align: center;
+  border-radius: 25px;
+  size: 1em;
+  width:auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+ 
+}
+
+/* When cursor hover over the button, it changes the color of the button */
+button:hover {
+  background-color: #00aa89;
+  color: black;
+  
+}
+
+.cancel_Button:hover {
+  background-color: red;
+  color: black;
+  
+}
+
+/* style for the Cancel Button*/
+.cancel_Button {
+  padding: 14px 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  border-style: solid;
+  color:crimson;
+  border-color: crimson;
+}
+
+/* Style for the submit button*/
+.submit_Button {
+  border-radius: 25px;
+  margin:30px;
+  text-align: center;
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  
+}
+
+/* The Modal (background) */
+.modal { 
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: rgba(0,0,0, 0.9);
+  padding-top: 50px;
+  
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 25px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 40%; 
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.container {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 5%;
+ 
+  }
+
+.h2_title{
+  font-size: 2.5em;
+}
+
+.Logo_IMG{
+  width: 250px;
+  height: auto;
+  
+  
+}
+
+.submitBTN{
+  text-align: center;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .submitBTN {
+     width: 100%;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" "zh-Hant">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Cal Trans </title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    
+
+    <!--CSS is files for styles.  This is where we create styling for the web page such as size of word, placement of words and just how we want the page appearance to show up as-->
+    <!--Styles for Index page-->
+    <link rel="stylesheet" href="index_Style.css">
+
+    <!--Styles for Sign Up page-->
+    <link rel="stylesheet" href="Modal_Style.css">
+
+    <script type = "text/javascript" src="SignInModal.js"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+    <main>
+
+    <div class="container" >
+      <img class="Logo_IMG" src="https://pdfhosting.blob.core.windows.net/$web/external-content.duckduckgo.com.png" alt="" >
+      <h2 class="h2_title">Welcome to Cal Tran</h2>
+
+              <!--Sign Up-->
+              <button onclick="document.getElementById('SignUp_Modal').style.display='block'" >Sign Up</button>
+              
+
+
+
+
+
+              <div id="SignUp_Modal" class="modal">
+                <span onclick="document.getElementById('SignUp_Modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+
+                    <h1>Sign Up</h1>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p><input type="checkbox" checked="checked" name="remember"> Check to agree to <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+                    
+
+                    <div class="clearfix">
+                      <button type="submit" class="submit_Button">SignUp</button>
+                      <button type="button" onclick="document.getElementById('SignUp_Modal').style.display='none'" class="cancel_Button">Cancel</button>
+                      
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!--Log In-->
+              <button onclick="document.getElementById('LogIn_Modal').style.display='block'" style="width:auto;">Login</button>
+
+
+
+              
+                  <div id="LogIn_Modal" class="modal">
+                    
+                    <form class="modal-content animate" action="/action_page.php" method="post">
+          
+                        <span onclick="document.getElementById('LogIn_Modal').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    
+                
+
+                      <div class="container">
+                        <h1>Log In</h1>
+                        <hr>
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                          
+                      
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                          <span style="margin-Left: 50px;" class="psw">Forgot <a href="#">password?</a></span>
+                        </label>
+                      </div>
+                      
+                      <div class="clearfix">
+                        <button type="submit" class="submit_Button">Login</button>
+                        <button type="button" onclick="document.getElementById('LogIn_Modal').style.display='none'" class="cancel_Button">Cancel</button>
+                        
+                      </div>
+
+
+
+                    </form>
+                  </div>
+
+
+            </div>
+
+
+
+    </main>
+  </body>
+</html>
